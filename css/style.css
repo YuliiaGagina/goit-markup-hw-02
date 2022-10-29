@@ -1,8 +1,12 @@
-body{
+:root{
     --main-color-hover: #2196F3;
     --main-color-tittle: #212121;
     --main-color-text: #757575;
-    --white-color:#FFFFFF;
+    
+
+}
+body{
+    color: var(--main-color-text);
 
     letter-spacing: 0.03em;
     line-height: 1.14;
@@ -16,7 +20,7 @@ body{
 }
 /* header */
 .header{
-    background-color: var(--white-color);
+    background-color: #FFFFFF;
 }
 .logo{
     color: #000000;
@@ -28,9 +32,7 @@ body{
     text-decoration: none;
 
 }
-.logo:focus{
-    color: var(--main-color-hover);
-}
+
 
 .logo .accent{
     color: var(--main-color-hover);
@@ -48,7 +50,7 @@ body{
     color:var(--main-color-hover);
 }
 .header .link{
-    color: var(--main-color-text);
+    color: inherit;
 }
 .link.active{
     color: var(--main-color-hover);
@@ -66,7 +68,7 @@ body{
 
 }
 .hero .tittle{
-    color: var(--white-color);
+    color: #FFFFFF;
     
     font-weight: 900;
     font-size: 44px;
@@ -77,18 +79,19 @@ body{
 }
 .hero .button{
     background-color: var(--main-color-hover);
-    color: var(--white-color);
+    color: #FFFFFF;
 
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
 
 .hero .button:hover,
 .hero .button:focus{
-    background-color: var(--white-color);
+    background-color: #FFFFFF;
     color:var(--main-color-hover);
 
 }
@@ -97,21 +100,17 @@ body{
 .section .tittle{
     color: var(--main-color-tittle);
     
-   
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     
-
-
 }
 
 /* benefits-work */
 
 .benefits,
 .work{
-    background-color: var(--white-color);
+    background-color: #FFFFFF;
 }
 
 /* benefits */
@@ -125,9 +124,8 @@ body{
 
 }
 .benefits .text{
-    color: var(--main-color-text);
+    color: inherit;
 
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 
@@ -147,7 +145,7 @@ body{
 }
 
 .team .item{
-    background-color: var(--white-color);
+    background-color: #FFFFFF;
 }
 .team .subtittle{
     color: var(--main-color-tittle);
@@ -158,12 +156,10 @@ body{
 
 }
 .team .text{
-    color: var(--main-color-text);
+    color: inherit;
 
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
-
 }
 
 /* footer */
@@ -172,15 +168,13 @@ body{
     background-color: #2F303A;
 }
 .logo.lower{
-    color: var(--white-color);
+    color: #FFFFFF;
 
 }
 
-.logo.lower:focus{
-    color: var(--main-color-hover);
-}
+
 .link.address{
-    color: var(--white-color);
+    color: #FFFFFF;
     
     font-style: normal;
     font-weight: 400;
@@ -215,7 +209,7 @@ body{
 /* portfolio */
 
 .section.portfolio{
-    background-color: var(--white-color);
+    background-color: #FFFFFF;
 }
 
 
@@ -230,17 +224,18 @@ body{
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
+    cursor: pointer;
 
 }
 .collection .button:hover,
 .collection .button:focus{
-    color: var(--white-color);
+    color: #FFFFFF;
     background-color: var(--main-color-hover);
 }
 
 /* cards */
-.cards .subtittle{
-    color: var(--main-color-tittle);
+.list.cards .subtittle{
+    color: inherit;
 
     font-weight: 700;
     font-size: 18px;
@@ -251,7 +246,6 @@ body{
 .cards .text{
     color: var(--main-color-text);
 
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
 
