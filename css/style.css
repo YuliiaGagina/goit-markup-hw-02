@@ -234,8 +234,8 @@ body{
 }
 
 /* cards */
-.list.cards .subtittle{
-    color: inherit;
+.cards .subtittle{
+    color: var(--main-color-tittle);
 
     font-weight: 700;
     font-size: 18px;
