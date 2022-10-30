@@ -2,12 +2,17 @@
     --main-color-hover: #2196F3;
     --main-color-tittle: #212121;
     --main-color-text: #757575;
-    
+    --white-color:#FFFFFF;
+    --black-color:#000000;
+    --team-background:#F5F4FA;
+    --footer-background: #2F303A;
+    --footer-links-color: rgba(255, 255, 255, 0.6);
 
 }
 body{
     color: var(--main-color-text);
 
+    font-size: 14px;
     letter-spacing: 0.03em;
     line-height: 1.14;
     font-family: Roboto, sans-serif;
@@ -20,10 +25,10 @@ body{
 }
 /* header */
 .header{
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
 }
 .logo{
-    color: #000000;
+    color: var(--black-color);
 
     font-family: Raleway;
     font-weight: 700;
@@ -42,7 +47,6 @@ body{
 
     font-family: 'Roboto';
     font-weight: 500;
-    font-size: 14px;
     letter-spacing: 0.02em;
 }
 .navigation .link:hover,
@@ -53,7 +57,7 @@ body{
     color: inherit;
 }
 .link.active{
-    color: var(--main-color-hover);
+    color: var(--black-color);
     
 }
 .header .link:hover,
@@ -64,11 +68,11 @@ body{
 /* Hero */
 
 .hero{
-    background-color: #2F303A;
+    background-color: var(--footer-background);
 
 }
 .hero .tittle{
-    color: #FFFFFF;
+    color: var(--white-color);
     
     font-weight: 900;
     font-size: 44px;
@@ -79,7 +83,7 @@ body{
 }
 .hero .button{
     background-color: var(--main-color-hover);
-    color: #FFFFFF;
+    color: var(--white-color);
 
     font-family: inherit;
     font-weight: 700;
@@ -91,7 +95,7 @@ body{
 
 .hero .button:hover,
 .hero .button:focus{
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
     color:var(--main-color-hover);
 
 }
@@ -110,7 +114,7 @@ body{
 
 .benefits,
 .work{
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
 }
 
 /* benefits */
@@ -118,17 +122,13 @@ body{
 .benefits .subtittle{
     color: var(--main-color-tittle);
     
-    font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
-
 }
 .benefits .text{
     color: inherit;
 
-    font-size: 14px;
     line-height: 1.71;
-
 }
 
 /* our work */
@@ -140,12 +140,12 @@ body{
 /* our team */
 
 .team{
-    background-color: #F5F4FA;
+    background-color: var(--team-background);
     
 }
 
 .team .item{
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
 }
 .team .subtittle{
     color: var(--main-color-tittle);
@@ -165,20 +165,19 @@ body{
 /* footer */
 
 .footer{
-    background-color: #2F303A;
+    background-color: var(--footer-background);
 }
 .logo.lower{
-    color: #FFFFFF;
+    color: var(--white-color);
 
 }
 
 
 .link.address{
-    color: #FFFFFF;
+    color: var(--white-color);
     
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
 }
 
@@ -190,11 +189,10 @@ body{
 .link.mail,
 .link.tel{
     
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--footer-links-color);
   
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
 }
 
@@ -209,14 +207,14 @@ body{
 /* portfolio */
 
 .section.portfolio{
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
 }
 
 
 /* list-collection */
 
 .collection .button{
-    background-color: #F5F4FA;
+    background-color: var(--team-background);
     color: var(--main-color-tittle);
 
     font-family: inherit;
@@ -229,7 +227,7 @@ body{
 }
 .collection .button:hover,
 .collection .button:focus{
-    color: #FFFFFF;
+    color: var(--white-color);
     background-color: var(--main-color-hover);
 }
 
@@ -237,7 +235,6 @@ body{
 .cards .subtittle{
     color: var(--main-color-tittle);
 
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
