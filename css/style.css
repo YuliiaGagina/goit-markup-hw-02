@@ -42,8 +42,8 @@ body{
 .logo .accent{
     color: var(--main-color-hover);
 }
-.navigation .link{
-    color: var(--main-color-tittle);
+.navigation.list .link{
+    color: var(--black-color);
 
     font-family: 'Roboto';
     font-weight: 500;
@@ -55,9 +55,10 @@ body{
 }
 .header .link{
     color: inherit;
+    font-weight: 500;
 }
-.link.active{
-    color: var(--black-color);
+.navigation .link.active{
+    color: var(--main-color-hover);
     
 }
 .header .link:hover,
